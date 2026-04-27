@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CI/CD 登录界面</title>
+</head>
+<body>
+ <p class="build-info">这是第 3次手动修改源码用户push到gitee</p>
+<div class="login-container">
+    <h2>CICD登录系统test02</h2>
+    <form action="#" method="post">
+        <label for="username">用户名：</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">密码：</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="登录">
+        <input type="reset" value="重置">
+    </form>    
+</div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        .build-info {
+        position: fixed;
+        top: 50px; /* 距离顶部的距离 */
+        left: 50%; /* 水平居中 */
+        transform: translateX(-50%); /* 精确居中 */
+        font-size: 26px;
+        color: #666;
+        background-color: #f9f9f9;
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    </style>
+</body>
+</html>
